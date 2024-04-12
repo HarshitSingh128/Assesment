@@ -24,6 +24,7 @@ namespace Assesment
             squarearea(6);
             Console.WriteLine("-----------------------");
             Console.WriteLine("Area of cube is" + cubetest(3));
+            Console.WriteLine("Hello");
 
         }
     }
