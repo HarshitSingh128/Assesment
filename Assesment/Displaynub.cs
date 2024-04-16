@@ -12,18 +12,19 @@ namespace Assesment
         {
             for(int i=1; i <= 50; i++)
             {
-                if (i % 3 == 0)
+                if (i % 3 == 0 && i % 5 == 0)
                 {
-                    Console.WriteLine("Pune"+i);
+                    Console.WriteLine("Welcome To Pune:" + i);
                 }
-                 if (i % 5 == 0)
+                else if (i % 3 == 0)
                 {
-                    Console.WriteLine("Welcome "+i);
+                    Console.WriteLine("Pune:"+i);
                 }
-                 if(i%3==0 && i%5== 0)
+               else  if (i % 5 == 0)
                 {
-                    Console.WriteLine("Welcome to pune"+i);
+                    Console.WriteLine("Welcome:"+i);
                 }
+                 
                 {
 
                 }

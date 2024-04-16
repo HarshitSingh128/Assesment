@@ -8,6 +8,7 @@ namespace Assesment
 {
     public class Charctername
     {
+        //4.	Write a Java program to input any alphabet and check whether it is vowel or consonant 
         static void Main(string[] args)
         {
             Console.WriteLine("Enter character");
