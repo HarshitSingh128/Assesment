@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Assesment
 {
-    public class Interfacedemo
+    public class ITtaxabledemo
     {
         static void Main(string[] args)
         {

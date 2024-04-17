@@ -12,9 +12,14 @@ namespace Assesment
         {
             
         }
-        public int pid { get; set; }
-        public string pname { get; set; }
-        public double price { get; set; }
+        public int Pid { get; set; }
+        public string Pname { get; set; }
+        public double Price { get; set; }
+
+        public override string ToString()
+        {
+            return $"Id={Pid},Pname={Pname},Price={Price}";
+        }
 
 
 
