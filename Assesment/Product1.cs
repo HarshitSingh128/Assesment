@@ -12,6 +12,14 @@ namespace Assesment
         {
             
         }
+        /*
+        public Product1(int Pid,string Pname,double Price)
+        {
+            this.Pid = Pid;
+            this.Pname = Pname;
+            this.Price = Price;
+        }
+        */
         public int Pid { get; set; }
         public string Pname { get; set; }
         public double Price { get; set; }
