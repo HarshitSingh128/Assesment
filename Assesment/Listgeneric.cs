@@ -16,11 +16,30 @@ namespace Assesment
             l1.Add(13);
             l1.Add(17);
             l1.Add(19);
+
+
+            //l1.AddRange(l1);//it take a collection and print all the element in given collection
+            Console.WriteLine("List capacity is:" + l1.Capacity);//By default capacity is 8 of list
+            //l1.Clear();//it remove all the element of collection
+            Console.WriteLine("Count is:" + l1.Count);//it gives total data of collection 
+            Console.WriteLine("Average is:" + l1.Average());//list has inbuilt average method
+            Console.WriteLine("Sum is:" + l1.Sum());//list has inbuilt sum method
+
+            // l1.Remove(11);//remove contains element of specific index
+
+            // l1.RemoveAt(0);//RemoveAt contains index of specific element
+
+            Console.WriteLine(l1.Contains(11));//contains tell us the element is present or not
+            l1.Insert(1, 12);//it insert element on given index
+            Console.WriteLine("fIRST is:" + l1.First());//it gives first element
+            Console.WriteLine(l1.IndexOf(12));//it gives index of given element
+
             foreach (int i in l1)
             {
                 Console.WriteLine(i);
             }
-            Console.WriteLine("---------------------");
+            Console.WriteLine("----------List with String-----------");
+
             List<string> l2 = new List<string>();
             l2.Add("Mukesh");
             l2.Add("Suresh");
@@ -30,18 +49,33 @@ namespace Assesment
             {
                 Console.WriteLine(i);
             }
-            Console.WriteLine("------------");
+            Console.WriteLine("----Stack demo--------");
+
             Stack<int> l3 = new Stack<int>();
             l3.Push(11);
             l3.Push(21);
             l3.Push(13);
             l3.Push(17);
             l3.Push(19);
+
+
+            Console.WriteLine("Count is:" + l3.Count);
+            Console.WriteLine(l3.Contains(11));
+            Console.WriteLine("Average is:" + l3.Average());
+            Console.WriteLine("Sum is:" + l3.Sum());
+
+            // l3.Clear();
+            // Console.WriteLine(l3.Pop());// it remove top element of stack 
+            Console.WriteLine(l3.Peek());//it gives top element of stack
+            Console.WriteLine("Element is:" + l3.ElementAt(2));//it gives element at given index
+            //l3.Reverse();
+            Console.WriteLine("First is:" + l3.First());
+            Console.WriteLine("Capacity is:" + l3.EnsureCapacity(5));//default capacity is 8 of stack
             foreach (int i in l3)
             {
                 Console.WriteLine(i);
             }
-            Console.WriteLine("--------------");
+            Console.WriteLine("----Stack with string----------");
             Stack<string> l4 = new Stack<string>();
             l4.Push("Suyash");
             l4.Push("Anmol");
@@ -52,7 +86,7 @@ namespace Assesment
             {
                 Console.WriteLine(i);
             }
-            Console.WriteLine("==================");
+            Console.WriteLine("=========Queue with string=========");
 
             Queue<string> queue = new Queue<string>();
             queue.Enqueue("Amol");
@@ -65,9 +99,9 @@ namespace Assesment
                 Console.WriteLine(i);
             }
 
-            Queue<Employee1> q = new Queue<Employee1>();
-             // q.Enqueue( new Employee1 { Eid = 1,  Ename= "Suayash", Esalary=15000 });
-           
+            Queue<Product1> q = new Queue<Product1>();
+            q.Enqueue(new Product1 { Pid = 1, Pname = "Suayash", Price = 15000 });
+
 
 
 

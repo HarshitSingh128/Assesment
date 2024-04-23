@@ -21,6 +21,7 @@ namespace Assesment
         }
         static void Main(string[] args)
         {
+         
             int[] arr = { 2, 5, 3, 7 };
             if (SearchElement(arr, 7))
             {
