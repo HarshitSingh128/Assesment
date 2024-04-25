@@ -86,6 +86,7 @@ namespace Assesment
             {
                 Console.WriteLine(i);
             }
+
             Console.WriteLine("=========Queue with string=========");
 
             Queue<string> queue = new Queue<string>();
@@ -94,14 +95,23 @@ namespace Assesment
             queue.Enqueue("Rajesh");
             queue.Enqueue("Harsh");
             queue.Enqueue("Harshit");
+
+           // Console.WriteLine(queue.Dequeue());
+
             foreach (string i in queue)
             {
                 Console.WriteLine(i);
             }
 
+            Console.WriteLine("=============Queue with Custom class==================");
             Queue<Product1> q = new Queue<Product1>();
             q.Enqueue(new Product1 { Pid = 1, Pname = "Suayash", Price = 15000 });
 
+
+            foreach (Product1 i in q)
+            {
+                Console.WriteLine(i);
+            }
 
 
 

@@ -72,16 +72,33 @@ namespace Assesment
                         Console.WriteLine("Delete Movie");
                         Console.WriteLine("Enter the Movei id you want to delete");
                         id = Convert.ToInt32(Console.ReadLine());
-                    
+
+                       
+                        int index = -1;
                         for (int i = 0; i < count; i++)
                         {
-                            if (m1[i]!=null && m1[i].Mid==id)
+                            if (m1[i].Mid == id)
                             {
-                               // m1[i] = null;
+                                index = i;
+                                break;
                             }
                         }
-                        Console.WriteLine("movei delete successfully");
-                        break;
+
+                        if (index == -1)
+                        {
+                            Console.WriteLine("Movie not found!");
+                            return;
+                        }
+
+                        for (int i = index; i < count - 1; i++)
+                        {
+                            m1[i] = m1[i + 1];
+                        }
+                        count--;
+
+                        Console.WriteLine("Movie deleted successfully!");
+                
+                break;
                     case 4:
                         Console.WriteLine("Show All Movei");
                         for (int i = 0; i < count; i++)

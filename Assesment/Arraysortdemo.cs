@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Assesment
 {
+    //11.	WAP sort array elements in ascending order.
     public class Arraysortdemo
     {
         static void Arraymethod(int[] ar)

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Assesment
 {
+    //10.	WAP to merge 2 arrays to 3rd array. 3rd array should not have elements of same value.
     public class MergeDemoArray
     {
         static int[] MergeTest(int[] a1,int[] a2)

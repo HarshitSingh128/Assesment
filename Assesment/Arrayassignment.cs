@@ -77,7 +77,40 @@ namespace Assesment
             }
             Console.WriteLine("Total Negative elemnt is:"+count);
         }
+        //4.	WAP to put even and odd elements of array in two separate arrays.
+        public static void SeprateEvenOdd(int[] a)
 
+        {
+            int[] Even = new int[4];
+            int[] Odd = new int[4];
+            int index=0;
+            int index1 = 0;
+            for(int i = 0; i < a.Length; i++)
+            {
+                if (a[i] % 2 == 0)
+                {
+                    Even[index++] = a[i];
+                }
+                else
+                {
+                    Odd[index1++] = a[i];
+                }
+                
+
+            }
+            Console.WriteLine("Even is:");
+            foreach(int ev in Even)
+            {
+                Console.WriteLine(ev);
+            }
+            Console.WriteLine("Odd is:");
+            foreach (int ev in Odd)
+            {
+                Console.WriteLine(ev);
+            }
+
+
+        }
         static void Main(string[] args)
         {
             int[] ar = { 1, 8, 9, 71, 89, };
@@ -92,7 +125,10 @@ namespace Assesment
             Console.WriteLine("----------");
             int[] arr1 = { -2, 2, -5, -7, -7, -8, 9, 6, 7 };
             Printnegative(arr1);
+
             Console.WriteLine("------------");
+            int[] arr2 = { 2, 4, 7, 8, 9, 6, 7 };
+            SeprateEvenOdd(arr2);
 
 
         }
