@@ -34,7 +34,7 @@ namespace Assesment
 
 
 
-            Console.WriteLine("-------------By using Temproray Array---------------");
+            Console.WriteLine("----------------------------");
             ReverseArraytest(arr);
 
 
